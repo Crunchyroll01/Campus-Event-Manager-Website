@@ -3,10 +3,68 @@
     padding: 0;
 }
 
-body{
-    background-color: rgb(210, 140, 110);
+body {
+    background-color:rgb(65, 45, 99);
 }
-nav ul{
+header {
+    background-color: rgb(41, 40, 40);
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.2);
+    nav > ul > li > a {
+        text-decoration: none;
+        color: rgb(209, 131, 159);
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+}
+nav ul {
     display: flex;
     list-style-type: none;
+    gap: 20px;
+    align-items: center;
+    li {
+        padding: 10px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        a:hover {
+            color: rgb(231, 166, 190);
+            font-size: 22px;
+            text-decoration: underline;
+        }
+    }
+}
+body > div {
+    padding-top: 25px;
+    text-align: center;
+}
+body > div> div{
+    font-size: 25px;
+    color: rgb(209, 131, 159);
+    H4 {
+        font-size: 20px;
+    }
+}
+#landing-img {
+    width: 70%;
+    height: 70%;
+    padding-top: 20px;
+    border-radius: 50px;
+}
+#home-btn {
+    height: 50px;
+    width: 50px;
+    padding-right: 20px;
+}
+#Background {
+    display: flex;
+    background-color: rgb(41, 40, 40);
+    border-radius: 20px;
+    margin: 30px auto;
+    width: 70vw;
+    height: 70vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }

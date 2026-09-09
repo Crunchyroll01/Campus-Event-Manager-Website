@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create an Event</title>
+    <link rel="stylesheet" href="CampusEvent.css">
+</head>
+<body>
+    <header>
+        <nav>
+        <ul id="navlist">
+            <a href="index.html"><img src="Images/building-columns-solid.webp" alt="image of a university's pillars for the home page icon" id="home-btn"></a>
+            <li><a href="Events.html">Current Events</a></li>
+            <li><a href="Create-Event.html">Create an Event</a></li> 
+        </ul>
+        </nav>
+    </header>
+    <div id="Background">
+        <div id="Main-Heading"> 
+            <H1>Create an Event</H1>
+            <H4>Fill out the form below to create a new event.</H4>
+        </div>
+        <div id="Main-Content">
+            <form action="submit_event.php" method="post">
+                <label for="event-name">Event Name:</label>
+                <input type="text" id="event-name" name="event-name" required><br><br>
+
+                <label for="event-time">Time:</label>
+                <input type="time" id="event-time" name="event-time" required><br><br>
+
+                <label for="event-location">Location:</label>
+                <input type="text" id="event-location" name="event-location" required><br><br>
+
+                <label for="event-description">Description:</label><br>
+                <textarea id="event-description" name="event-description" rows="4" cols="50" required></textarea><br><br>
+
+                <input type="submit" value="Create Event">
+        </div>
+    </div>
+</body>
+</html>
