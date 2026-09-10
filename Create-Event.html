@@ -16,21 +16,27 @@
         </ul>
         </nav>
     </header>
-    <div id="Background">
+    <div id="Background-Create-Event">
         <div id="Main-Heading"> 
             <H1>Create an Event</H1>
             <H4>Fill out the form below to create a new event.</H4>
         </div>
         <div id="Main-Content">
-            <form action="submit_event.php" method="post">
-                <label for="event-name">Event Name:</label>
-                <input type="text" id="event-name" name="event-name" required><br><br>
+            <form action="submit_event.php" method="post" id="event-form">
+                <label for="event-name">Event Name:</label><br>
+                <input type="text" id="event-name" name="event-name" required><br>
 
-                <label for="event-time">Time:</label>
-                <input type="time" id="event-time" name="event-time" required><br><br>
+                <label for="event-host-name">Host Name:</label><br>
+                <input type="text" id="event-host-name" name="event-host-name" required><br>
 
-                <label for="event-location">Location:</label>
-                <input type="text" id="event-location" name="event-location" required><br><br>
+                <label for="event-date">Date:</label><br>
+                <input type="date" id="event-date" name="event-date" required><br>
+
+                <label for="event-time">Time:</label><br>
+                <input type="time" id="event-time" name="event-time" required><br>
+
+                <label for="event-location">Location:</label><br>
+                <input type="text" id="event-location" name="event-location" required><br>
 
                 <label for="event-description">Description:</label><br>
                 <textarea id="event-description" name="event-description" rows="4" cols="50" required></textarea><br><br>
