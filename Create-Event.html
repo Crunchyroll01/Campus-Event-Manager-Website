@@ -22,7 +22,7 @@
             <H4>Fill out the form below to create a new event.</H4>
         </div>
         <div id="Main-Content">
-            <form action="submit_event.js" method="post" id="event-form">
+            <form id="event-form">
                 <label for="event-name">Event Name:</label><br>
                 <input type="text" id="event-name" name="event-name" required><br>
 
@@ -42,7 +42,9 @@
                 <textarea id="event-description" name="event-description" rows="4" cols="50" required></textarea><br><br>
 
                 <input type="submit" value="Create Event">
+            </form>
         </div>
     </div>
+    <script src="submit_event.js"></script>
 </body>
 </html>

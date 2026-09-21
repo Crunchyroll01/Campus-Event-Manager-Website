@@ -22,8 +22,30 @@
             <H1>Current Events</H1>
             <H4>View all current events at your local college campus.</H4>
         </div>
-        <div id="Main-Content">
-            
+        <div id="events-container">
+
         </div>
+    </div>
+
+    <div id="rsvp-modal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); z-index: 1000; justify-content: center; align-items: center;">
+        <div style="background: #2b2b2b; padding: 25px; border-radius: 8px; width: 320px; border: 1px solid #725e5e; color: #fff;">
+            <h3 id="modal-event-title" style="margin-top: 0;">RSVP for Event</h3>
+            <input type="hidden" id="modal-event-id">
+            
+            <label>Your Name:</label><br>
+            <input type="text" id="modal-user-name" style="width: 100%; padding: 8px; margin: 8px 0 15px 0; box-sizing: border-box;" required><br>
+            
+            <label>Your Email:</label><br>
+            <input type="email" id="modal-user-email" style="width: 100%; padding: 8px; margin: 8px 0 20px 0; box-sizing: border-box;" required><br>
+            
+            <div style="text-align: right;" id ="modal-buttons">
+                <button id="close-rsvp-btn" onclick="closeRSVP()" style="padding: 8px 12px; margin-right: 8px; background: #555; color: white; border: none; cursor: pointer; border-radius: 4px;">Cancel</button>
+                <button id="submit-rsvp-btn" onclick="submitRSVP()" style="padding: 8px 12px; background: #4CAF50; color: white; border: none; cursor: pointer; border-radius: 4px;">Confirm RSVP</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="display_event.js"></script>
 </body>
 </html>
